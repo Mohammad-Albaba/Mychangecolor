@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EE145E"
+    android:id="@+id/layout"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/textview"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Color Code"
+        android:layout_width="150dp"
+        android:layout_height="50dp"/>
+    <Button
+        android:layout_centerVertical="true"
+        android:background="@mipmap/ic_color"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button"
+        android:onClick="btn_color"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="150dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        tools:ignore="OnClick" />
+<RadioGroup
+    android:orientation="horizontal"
+    android:layout_marginTop="500dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:text="Color"
+        android:layout_marginLeft="30dp"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        />
+    <RadioButton
+        android:textColor="#fff"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:text="Number Color"
+        android:layout_marginLeft="30dp"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        />
+</RadioGroup>
+<Button
+    android:onClick="btn_start"
+    android:textColor="#000"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/start"
+    android:text="start"
+    android:layout_width="70dp"
+    android:layout_height="50dp"/>
+</RelativeLayout>
